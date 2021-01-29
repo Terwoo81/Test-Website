@@ -7,50 +7,68 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
   </head>
   <body>
-  <section class="section">
-    <div class="container">
-      <h1 class="title">
-        Hello Internet
-      </h1>
-      <p class="subtitle">
-        TERWOO81
-      </p>
+    <div class="block">
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item">
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-info">
+            <button class="button" onclick="toggleDarkMode">Dark Mode</button>
+          </a>
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
+</nav>
+</div>
+
   <div class="columns">
     <div class="column is-one-fifth">
       <aside class="menu">
+      <ul class="menu-list">
+        <li><a class="is-active">Home</a></li>
+      </ul>
       <p class="menu-label">
         Projects
       </p>
       <ul class="menu-list">
-        <li><a>Dashboard</a></li>
-        <li><a>Customers</a></li>
-      </ul>
-      <p class="menu-label">
-        My work
-      </p>
-      <ul class="menu-list">
-        <li><a>Team Settings</a></li>
-        <li>
-          <a class="is-active">Manage Your Team</a>
+        <li><a>Project 1</a>
           <ul>
-            <li><a>Members</a></li>
-            <li><a>Plugins</a></li>
-            <li><a>Add a member</a></li>
+            <li><a>Files</a></li>
+            <li><a>Notes</a></li>
           </ul>
         </li>
-        <li><a>Invitations</a></li>
-        <li><a>Cloud Storage Environment Settings</a></li>
-        <li><a>Authentication</a></li>
+        <li>
+          <a>Project 2</a>
+          <ul>
+            <li><a>Files</a></li>
+            <li><a>Notes</a></li>
+          </ul>
+        </li>
+        <li><a>A</a></li>
+        <li><a>B</a></li>
+        <li><a>C</a></li>
       </ul>
       <p class="menu-label">
         About
       </p>
       <ul class="menu-list">
-        <li><a>Payments</a></li>
-        <li><a>Transfers</a></li>
-        <li><a>Balance</a></li>
+        <li><a>A</a></li>
+        <li><a>B</a></li>
+        <li><a>C</a></li>
       </ul>
     </aside>
     </div>
