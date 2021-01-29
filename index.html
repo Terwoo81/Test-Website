@@ -24,7 +24,7 @@
 
     <div class="navbar-end">
       <div class="navbar-item">
-            <button class="button is-info" onclick="toggleDarkMode">Dark Mode</button>
+            <button class="button is-info" onclick="toggleDarkMode()">Theme</button>
       </div>
     </div>
   </div>
@@ -164,18 +164,24 @@
           </div>
         </div>
       </div>
-</div>
+    </div>
   </div>
 </div>
-    </div>
+  </div>
   </div>
   <script>
     var lightModeTheme = "https://unpkg.com/bulmaswatch/default/bulmaswatch.min.css";
-    var darkModeTheme = "https://unpkg.com/bulmaswatch/darkly/bulmaswatch.min.css";
+    var darkModeTheme = "https://unpkg.com/bulmaswatch/slate/bulmaswatch.min.css";
 
     var toggleDarkMode = function () {
       link = document.getElementById("theme");
-      link.href = darkModeTheme
+      if (link.href == darkModeTheme){
+        link.href = lightModeTheme;
+      }
+      else{
+        link.href = darkModeTheme;
+      }
+
     };
 
   </script>
