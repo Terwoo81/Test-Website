@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pesky Bird</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link id="theme" rel="stylesheet" href="https://unpkg.com/bulmaswatch/default/bulmaswatch.min.css">
   </head>
   <body>
     <div class="block">
@@ -24,11 +24,7 @@
 
     <div class="navbar-end">
       <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-info">
-            <button class="button" onclick="toggleDarkMode">Dark Mode</button>
-          </a>
-        </div>
+            <button class="button is-info" onclick="toggleDarkMode">Dark Mode</button>
       </div>
     </div>
   </div>
@@ -173,6 +169,14 @@
 </div>
     </div>
   </div>
+  <script>
+    var lightModeTheme = "https://unpkg.com/bulmaswatch/default/bulmaswatch.min.css";
+    var darkModeTheme = "https://unpkg.com/bulmaswatch/darkly/bulmaswatch.min.css";
 
+    var toggleDarkMode = function () {
+      
+    };
+
+  </script>
   </body>
 </html>
