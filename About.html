@@ -74,7 +74,7 @@
   <div class="card-content">
     <div class="content">
       <p>
-      My name is James and I am 12 years old
+      My name is James and I am <span id="age"></span> years old
       I was born in 2008 on the 18th of March
       </p>
       <p>
@@ -154,6 +154,18 @@
       navbar.classList.toggle("is-active");
     });
   });
+  </script>
+  <script>
+    currentYear = new Date();
+    birthYear  = new Date("3/18/2008");
+
+    age = (currentYear - birthYear) / (1000 * 60 * 60 * 24 * 365);
+    console.log(currentYear);
+    console.log(birthYear);
+    console.log(age);
+
+    const ageTag = document.getElementById("age");
+    ageTag.innerHTML = Math.floor(age);
   </script>
   </body>
 </html>
